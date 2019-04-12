@@ -13,13 +13,13 @@ RUN apt-get update --fix-missing --no-install-recommends \
             python3 \
             python3-dev \
             python3-dbus \
+            wait-for-it \
             wget \
     && wget https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py && rm get-pip.py \
     && pip3 install --upgrade pip \
     && apt-get clean all \
-    && rm -rf /var/lib/apt/lists/* \
-    && chmod +x /usr/local/bin/wait-for-it
+    && rm -rf /var/lib/apt/lists/*
 
 ENV USER=wirepas
 ENV HOME=/home/wirepas
