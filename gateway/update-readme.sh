@@ -14,8 +14,8 @@ function get_tags
 
 function write_tags
 {
-    echo -e "\\nimage: [${IMAGE}](https://hub.docker.com/r/wirepas/${IMAGE})" > tags.gen
-    echo -e "\\ntags:" >> tags.gen
+    echo -e "\\n**image:** [${IMAGE}](https://hub.docker.com/r/wirepas/${IMAGE})" > tags.gen
+    echo -e "\\n**tags:**" >> tags.gen
     for tag in ${TAGS}
     do
         echo -e "\\n  -  ${tag}" >> tags.gen

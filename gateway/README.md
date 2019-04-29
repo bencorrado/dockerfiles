@@ -8,9 +8,9 @@ The manifest contains the
 
 <!--- START --->
 
-image: [wirepas/gateway](https://hub.docker.com/r/wirepas/wirepas/gateway)
+**image:** [wirepas/gateway](https://hub.docker.com/r/wirepas/wirepas/gateway)
 
-tags:
+**tags:**
 
   -  latest
 <!--- END --->
@@ -23,22 +23,26 @@ Available targets and tags:
 
 <!--- STARTx86 --->
 
-image: [wirepas/gateway-x86](https://hub.docker.com/r/wirepas/wirepas/gateway-x86)
+**image:** [wirepas/gateway-x86](https://hub.docker.com/r/wirepas/wirepas/gateway-x86)
 
-tags:
+**tags:**
 
   -  latest
+
+  -  edge
 <!--- ENDx86 --->
 
 
 <!--- STARTrpi --->
 
-image: [wirepas/gateway-rpi](https://hub.docker.com/r/wirepas/wirepas/gateway-rpi)
+**image:** [wirepas/gateway-rpi](https://hub.docker.com/r/wirepas/wirepas/gateway-rpi)
 
-tags:
+**tags:**
 
   -  latest
 
   -  1.1.0
+
+  -  edge
 <!--- ENDrpi --->
 
