@@ -21,12 +21,12 @@ RUN apt-get update --fix-missing --no-install-recommends \
     && apt-get clean all \
     && rm -rf /var/lib/apt/lists/*
 
-ENV USER=wirepas
-ENV HOME=/home/wirepas
-ENV WM_PACKAGES=${HOME}/packages/
+ENV WM_USER=wirepas
+ENV WM_HOME=/home/wirepas
+ENV WM_PACKAGES=${WM_HOME}/packages/
 
-RUN groupadd -r ${USER} --gid 1000 \
-    && useradd --uid 1000 -r -g ${USER} ${USER} \
-    && mkdir -p ${HOME}
+RUN groupadd -r ${WM_USER} --gid 1000 \
+    && useradd --uid 1000 -r -g ${WM_USER} ${WM_USER} \
+    && mkdir -p ${WM_HOME}
 
 

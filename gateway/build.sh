@@ -19,7 +19,7 @@ function build_arch
     echo "building ${GIT_REPO}#${GIT_BRANCH}:container/${ARCH}"
     docker build --compress \
              -t wirepas/gateway-"${ARCH}":"${DOCKER_TAG}" \
-             "${GIT_REPO}"#"${GIT_BRANCH}":container/"${ARCH}"
+             "${GIT_REPO}"#"${GIT_BRANCH}":container/"${ARCH}" --no-cache
 }
 
 build_arch "x86"
