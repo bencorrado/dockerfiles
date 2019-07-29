@@ -1,8 +1,0 @@
-.git
-*~
-*.o
-*.tmp
-
-*/*/*wm-shell*
-*/*/*.egg-info/
-**/*.egg-info/
